@@ -23,9 +23,15 @@ public static void main(String[] args){
 
         //Start of while statement to properly split a line of text and properly break up
         //the data by the uses of its spaces
-        while (true) {
-            String input = inputStream.readLine();
-            if (input == null) break;
+        String input;
+        
+        while(input = inputStream.readline()) != null{
+            
+            arr.add(input);
+        
+//         while (true) {
+//             String input = inputStream.readLine();
+//             if (input == null) break;
             //String[] array = input.split(" ");
 
             values.add(String.valueOf(input));
